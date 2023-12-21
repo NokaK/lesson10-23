@@ -1,0 +1,70 @@
+.container {
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: brown; */
+}
+.small-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  /* background-color: pink; */
+}
+
+p {
+  /* max-width: 650px; */
+}
+
+/* .hero {
+  background-color: grey;
+}
+.blog {
+  background-color: darkgreen;
+} */
+
+/* grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  gap: 20px;
+  grid-template-areas:
+    "header header header"
+    "menu main right"
+    "menu footer footer";
+}
+
+.item {
+  background-color: blue;
+  /* height: 100px; */
+}
+.header {
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  /* grid-column:1/4; */
+
+  grid-area: header;
+}
+.menu {
+  /* grid-row-start: 2;
+  grid-row-end: 4; */
+  /* grid-row:2/4 */
+  grid-area: menu;
+}
+
+.main {
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+  grid-area: main;
+}
+
+.right {
+  /* grid-column-start: 3;
+  grid-column-end: 4; */
+  grid-area: right;
+}
+.footer {
+  /* grid-column-start: 2;
+  grid-column-end: 4; */
+  grid-area: footer;
+}
